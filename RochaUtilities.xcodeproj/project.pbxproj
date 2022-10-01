@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5838359F28E7B5B8007B33C2 /* RochaUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5838359E28E7B5B8007B33C2 /* RochaUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		583835A628E7B5D2007B33C2 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583835A528E7B5D2007B33C2 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5838359B28E7B5B8007B33C2 /* RochaUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RochaUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5838359E28E7B5B8007B33C2 /* RochaUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RochaUtilities.h; sourceTree = "<group>"; };
+		583835A528E7B5D2007B33C2 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		5838359D28E7B5B8007B33C2 /* RochaUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				5838359E28E7B5B8007B33C2 /* RochaUtilities.h */,
+				583835A528E7B5D2007B33C2 /* Formatter.swift */,
 			);
 			path = RochaUtilities;
 			sourceTree = "<group>";
@@ -57,7 +57,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5838359F28E7B5B8007B33C2 /* RochaUtilities.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +92,7 @@
 				TargetAttributes = {
 					5838359A28E7B5B8007B33C2 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583835A628E7B5D2007B33C2 /* Formatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +259,7 @@
 		583835A328E7B5B8007B33C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -277,6 +279,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +288,7 @@
 		583835A428E7B5B8007B33C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
